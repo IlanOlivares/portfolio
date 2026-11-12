@@ -274,3 +274,10 @@ section{padding:clamp(80px,11vw,160px) 0}
 .foot-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid var(--line-inv);padding-top:24px;font-size:.88rem}
 @media (max-width:860px){.foot{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.foot{grid-template-columns:1fr}}
+
+/* Contact layout + tap targets */
+.contact-split{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
+@media (max-width:860px){.contact-split{grid-template-columns:1fr}}
+.contact-aside a{overflow-wrap:anywhere}
+.brand{padding:10px 0}
+.cta .mail{display:inline-block;padding:10px 0 8px;overflow-wrap:anywhere}
