@@ -1,6 +1,6 @@
 # Ilan Olivares — Web Design & Development, El Paso, Texas
 
-> Ilan Olivares is an independent web designer and developer based in El Paso, Texas. He designs and hand-builds custom websites, website redesigns and landing pages, and provides local SEO, AI search visibility and ongoing website care for small businesses, churches, nonprofits, government and public agencies, medical practices, real estate groups, publications and personal brands. 10+ years of experience, 50+ projects launched. Clients work directly with Ilan from consultation through launch and support.
+> Ilan Olivares is an independent web designer and developer based in El Paso, Texas. He designs and hand-codes custom websites, website redesigns and landing pages, and provides local SEO, AI search visibility and website care for small businesses, churches, nonprofits, government and public agencies, medical practices, real estate, publications and personal brands. 10+ years of experience, 50+ projects launched. Clients work directly with Ilan from consultation through launch and support.
 
 - Location: El Paso, Texas, USA
 - Service area: El Paso, Horizon City, Socorro, Canutillo and Anthony, TX; Las Cruces, Sunland Park and Santa Teresa, NM; remote clients nationwide
@@ -8,13 +8,13 @@
 - Free consultation; written proposal with scope and price before work begins
 
 ## Services
-- [Custom website design](https://ilanolivares.com/services/custom-web-design/): A new website designed around your audience and built by hand, so it loads fast, reads clearly and works on every phone.
-- [Website redesign](https://ilanolivares.com/services/website-redesign/): For sites that feel dated, confuse visitors or don't bring in inquiries. I keep what works, fix what doesn't and protect your search rankings.
-- [Landing pages](https://ilanolivares.com/services/landing-pages/): Focused pages for a launch, event, program or ad campaign, built to explain one thing quickly and get one action.
-- [Local SEO & AI search visibility](https://ilanolivares.com/services/seo/): Technical SEO, structured data and clear content that help Google, Bing and AI assistants like ChatGPT understand who you are and where you work.
-- [Website care & support](https://ilanolivares.com/services/website-care/): Ongoing updates, new pages, alerts and fixes from the person who knows your site, so it never falls behind.
+- [Custom website design](https://ilanolivares.com/services/custom-web-design/): Designed around your customers, coded by hand, fast on every phone. A site that looks like the real deal because it is.
+- [Local SEO & AI search visibility](https://ilanolivares.com/services/seo/): Show up when El Paso searches on Google, Maps and Bing, or asks ChatGPT. Built into every site, and available on its own.
+- [Website redesign](https://ilanolivares.com/services/website-redesign/): A dated or confusing site, rebuilt to look current and bring in inquiries without losing the rankings you've earned.
+- [Landing pages](https://ilanolivares.com/services/landing-pages/): One page, one goal. For launches, events, programs and ads. I can also build from your Figma or Webflow design.
+- [Website care & support](https://ilanolivares.com/services/website-care/): Updates, new pages, alerts and fixes, handled fast by the person who built it.
 
 ## About
-- [About Ilan Olivares](https://ilanolivares.com/about/): Background, approach and how projects work
-- [Frequently asked questions](https://ilanolivares.com/#faq): Cost, timelines, SEO, AI search, redesigns and support
+- [About Ilan Olivares](https://ilanolivares.com/about/): Background and approach
+- [FAQ](https://ilanolivares.com/#faq): Cost, timelines, SEO, AI search, redesigns and support
 - [Start a project](https://ilanolivares.com/contact/): Project inquiry form
