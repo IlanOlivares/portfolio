@@ -1,26 +1,31 @@
 # Ilan Olivares — Full-Service Digital Studio
 
-> Ilan Olivares is a founder-led, full-service digital studio based in El Paso, Texas, working with clients across the United States and internationally. The studio handles strategy and UX, brand identity, web design, web development, e-commerce, SEO and AI search visibility, managed hosting, domains, DNS, business email (Google Workspace and Microsoft 365), and ongoing website care and growth. Bilingual: English and Spanish. 10+ years of experience, 50+ websites, platforms and campaigns launched. Every engagement is led personally by founder Ilan Olivares.
+> Ilan Olivares is a founder-led, full-service digital studio based in El Paso, Texas, working with clients across the United States and internationally. The studio handles strategy and UX, brand identity, web design, web development, e-commerce, SEO and AI search visibility, managed hosting, domains, DNS, business email (Google Workspace and Microsoft 365), and ongoing website care and growth. Bilingual: English and Spanish, with a full Spanish site. 10+ years of experience, 50+ websites, platforms and campaigns launched. Every engagement is led personally by founder Ilan Olivares.
 
 - Headquarters: El Paso, Texas, USA (serves El Paso, Las Cruces, the wider Southwest, nationwide and international clients)
 - Languages: English, Spanish (https://ilanolivares.com/es/)
-- Contact: hello@ilanolivares.com or https://ilanolivares.com/contact/
+- Contact: hello@ilanolivares.com or https://ilanolivares.com/contact/ (Spanish: https://ilanolivares.com/es/contacto/)
 - Engagements: projects, monthly partnerships, managed services (hosting, domains, email, care)
 - Free discovery call; written proposal with scope, timeline and price before work begins
 - Typical timelines: landing pages in a few weeks; full websites in one to three months
 
 ## Services
-- [Strategy & UX](https://ilanolivares.com/services/strategy/): Research, positioning, site architecture and user journeys, so every page has a job to do.
-- [Brand identity](https://ilanolivares.com/services/branding/): Logos, visual systems and guidelines that make you recognizable everywhere you show up.
-- [Web design](https://ilanolivares.com/services/web-design/): Bespoke, editorial-quality interfaces designed around your customers, never a template.
-- [Web development](https://ilanolivares.com/services/web-development/): Fast, accessible, hand-built sites on modern stacks, from static to Webflow to headless CMS.
-- [E-commerce](https://ilanolivares.com/services/ecommerce/): Online stores that sell, with checkout, payments, shipping and inventory handled properly.
-- [SEO & AI search](https://ilanolivares.com/services/seo/): Technical SEO, structured data and content that get you found on Google, Maps and in AI answers.
-- [Hosting, domains & email](https://ilanolivares.com/services/hosting-email/): Managed hosting, DNS, SSL and professional business email, set up properly and looked after.
-- [Care & growth](https://ilanolivares.com/services/care/): Updates, monitoring, analytics and continuous improvement, long after launch day.
+- [Strategy & UX](https://ilanolivares.com/services/strategy/): Research, positioning, site architecture and user journeys, so every page has a job to do. (Spanish: https://ilanolivares.com/es/servicios/estrategia-ux/)
+- [Brand identity](https://ilanolivares.com/services/branding/): Logos, visual systems and guidelines that make you recognizable everywhere you show up. (Spanish: https://ilanolivares.com/es/servicios/identidad-de-marca/)
+- [Web design](https://ilanolivares.com/services/web-design/): Bespoke, editorial-quality interfaces designed around your customers, never a template. (Spanish: https://ilanolivares.com/es/servicios/diseno-web/)
+- [Web development](https://ilanolivares.com/services/web-development/): Fast, accessible, hand-built sites on modern stacks, from static to Webflow to headless CMS. (Spanish: https://ilanolivares.com/es/servicios/desarrollo-web/)
+- [E-commerce](https://ilanolivares.com/services/ecommerce/): Online stores that sell, with checkout, payments, shipping and inventory handled properly. (Spanish: https://ilanolivares.com/es/servicios/ecommerce/)
+- [SEO & AI search](https://ilanolivares.com/services/seo/): Technical SEO, structured data and content that get you found on Google, Maps and in AI answers. (Spanish: https://ilanolivares.com/es/servicios/seo-local-e-ia/)
+- [Hosting, domains & email](https://ilanolivares.com/services/hosting-email/): Managed hosting, DNS, SSL and professional business email, set up properly and looked after. (Spanish: https://ilanolivares.com/es/servicios/hosting-dominios-correo/)
+- [Care & growth](https://ilanolivares.com/services/care/): Updates, monitoring, analytics and continuous improvement, long after launch day. (Spanish: https://ilanolivares.com/es/servicios/mantenimiento-web/)
+
+## Insights
+- [What does a website cost?](https://ilanolivares.com/insights/website-cost/): What drives the investment in a website, and how to compare proposals with confidence. (Spanish: https://ilanolivares.com/es/insights/costo-sitio-web/)
+- [How to choose a web design agency](https://ilanolivares.com/insights/choosing-a-web-design-agency/): The questions that separate a good partner from an expensive mistake, whether you're in El Paso or anywhere else. (Spanish: https://ilanolivares.com/es/insights/como-elegir-agencia-de-diseno-web/)
+- [Webflow vs. WordPress vs. custom code](https://ilanolivares.com/insights/webflow-vs-wordpress-vs-custom/): An honest comparison of the three most common ways to build a business website. (Spanish: https://ilanolivares.com/es/insights/webflow-vs-wordpress-vs-codigo-a-la-medida/)
+- [Moving your business email to Google Workspace](https://ilanolivares.com/insights/moving-business-email-to-google-workspace/): A calm, step-by-step plan for switching email providers without losing messages. (Spanish: https://ilanolivares.com/es/insights/migrar-correo-empresarial-a-google-workspace/)
 
 ## Studio
-- [About the studio](https://ilanolivares.com/studio/)
+- [About the studio](https://ilanolivares.com/studio/) (Spanish: https://ilanolivares.com/es/estudio/)
 - [Selected work](https://ilanolivares.com/#work)
-- [Website cost guide](https://ilanolivares.com/insights/website-cost/)
 - [FAQ](https://ilanolivares.com/#faq)

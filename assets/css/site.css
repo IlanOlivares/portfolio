@@ -302,3 +302,11 @@ section{padding:clamp(80px,11vw,160px) 0}
 .display,h1,h2,.cta h2,.foot-mark{letter-spacing:-2px}
 .statement,.stack h3,.case h3,.plan h3,.phases h3,.related b,.facts strong,.brand b,.score b,.cta .mail,.contact-aside h2{letter-spacing:-1px}
 @media (max-width:640px){.display,h1,h2,.cta h2{letter-spacing:-1px}}
+
+/* Insights list + article numbered headings */
+.insights-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+.insights-list a{padding:clamp(26px,3vw,40px)}
+.insights-list b{font-size:clamp(1.5rem,2.2vw,2rem);margin-bottom:12px}
+@media (max-width:860px){.insights-list{grid-template-columns:1fr}}
+.prose ol{padding-left:1.2em}
+.prose ol li{margin:.6em 0}
