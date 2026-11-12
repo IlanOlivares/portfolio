@@ -310,3 +310,116 @@ section{padding:clamp(80px,11vw,160px) 0}
 @media (max-width:860px){.insights-list{grid-template-columns:1fr}}
 .prose ol{padding-left:1.2em}
 .prose ol li{margin:.6em 0}
+
+/* ===== Typographic hierarchy, full Neue Haas range =====
+   Display 200  numerals (phases, scores)
+   Display 300  statements, large stats, CTA, footer wordmark
+   Display 400  service list titles
+   Display 500  hero and section headlines, card titles
+   Text 400/500 body, labels, UI */
+.hero h1{font-size:clamp(3rem,8.6vw,8.8rem);font-weight:500;line-height:.94}
+.statement{font-weight:300;font-size:clamp(2rem,4.1vw,3.9rem);line-height:1.08;max-width:24ch}
+.stack h3{font-weight:400;font-size:clamp(1.6rem,2.6vw,2.4rem)}
+.facts strong{font-weight:300;font-size:clamp(2rem,2.8vw,2.6rem);line-height:1}
+.facts li{padding:22px 0}
+.score b{font-weight:200;font-size:3.4rem}
+.phases li::before{font:200 clamp(2.4rem,3.4vw,3.2rem)/1 var(--serif);letter-spacing:-1px;color:var(--blue);margin-bottom:36px;content:"0" counter(p)}
+.phases h3{font-weight:500}
+.plan h3{font-weight:500}
+.cta h2{font-weight:300;font-size:clamp(3rem,8vw,8rem)}
+.cta .mail{font-weight:300}
+.foot-mark{font-weight:300;letter-spacing:-.04em}
+.label{font-weight:500}
+.lede{font-weight:400}
+.sec-head h2,.page-hero h1{font-weight:500}
+.related b{font-weight:500}
+.case h3{font-weight:500}
+.contact-aside h2{font-weight:400}
+.sticky .small{font-style:italic}
+
+/* ===== Service visuals ===== */
+.v{--t:7s;--fg:#14151a;--ac:#2d3be8;--bg:#f1f2f4;color:var(--fg);background:var(--bg);border-radius:24px;overflow:hidden;position:relative}
+.v svg{display:block;width:100%;height:auto}
+.v-strategy{--bg:var(--s1);box-shadow:inset 0 0 0 1px var(--line)}
+.v-branding{--bg:var(--s2)}
+.v-web-design{--bg:var(--s3)}
+.v-web-development{--bg:var(--s4);--ac:#1e28a8}
+.v-ecommerce{--bg:var(--s5);--fg:#fff;--ac:#14151a}
+.v-seo{--bg:var(--s6);--fg:#fff;--ac:#14151a}
+.v-hosting-email{--bg:var(--s7);--fg:#fff;--ac:#a5acf6}
+.v-care{--bg:var(--s8);--fg:#fff;--ac:#8f97f7}
+.v .s{fill:none;stroke:var(--fg);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.v .s.t{fill:var(--fg);fill-opacity:.1}
+.v .t{fill:var(--fg);fill-opacity:.14}
+.v .f{fill:var(--fg)}
+.v .a{fill:var(--ac)}
+.v .as{fill:none;stroke:var(--ac);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.v .bgf{fill:var(--bg)}
+.v .bgs{fill:none;stroke:var(--bg);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.v .faint{opacity:.28}
+.v .faint2{opacity:.5}
+.v .dash{stroke-dasharray:4 7}
+.v text{font-family:var(--sans);font-weight:500;letter-spacing:0}
+.v .tb{fill:var(--bg)}
+.v-ecommerce .tb,.v-seo .tb{fill:#fff}
+.v .bgt{fill:var(--bg)}
+.v .sm{fill:var(--fg);opacity:.75}
+.v .disp{font-family:var(--serif);font-weight:300;fill:var(--fg);letter-spacing:-2px}
+.v .ring{stroke-dasharray:1;stroke-dashoffset:0}
+.v *{transform-box:fill-box;transform-origin:center}
+.v .type,.v .line{transform-origin:left center}
+.v .wipe{transform-origin:right center;transform:scaleX(0)}
+.v .rowup{transform:translateY(-96px)}
+.v .rowdown{transform:translateY(56px)}
+.v .trav{transform-box:view-box;transform-origin:0 0;opacity:0}
+
+@media (prefers-reduced-motion:no-preference){
+  .v.play .pop{animation:v-pop var(--t) var(--d,0s) infinite both cubic-bezier(.2,.7,.2,1)}
+  .v.play .grow{animation:v-grow var(--t) var(--d,0s) infinite both cubic-bezier(.2,.7,.2,1)}
+  .v.play .draw{stroke-dasharray:1;animation:v-draw var(--t) var(--d,0s) infinite both ease-out}
+  .v.play .ring{animation:v-ring var(--t) var(--d,0s) infinite both ease-out}
+  .v.play .type,.v.play .line{animation:v-type var(--t) var(--d,0s) infinite both ease-out}
+  .v.play .snap{animation:v-snap var(--t) var(--d,0s) infinite both cubic-bezier(.2,.8,.2,1)}
+  .v.play .fadein{animation:v-fade var(--t) var(--d,0s) infinite both ease}
+  .v.play .areain{animation:v-fade var(--t) var(--d,0s) infinite both ease}
+  .v.play .trav{animation:v-trav var(--t) var(--d,0s) infinite both cubic-bezier(.45,0,.2,1)}
+  .v.play .bump{animation:v-bump var(--t) var(--d,0s) infinite both}
+  .v.play .wipe{animation:v-wipe var(--t) var(--d,0s) infinite both steps(26)}
+  .v.play .rowdown{animation:v-down var(--t) var(--d,0s) infinite both cubic-bezier(.5,0,.2,1)}
+  .v.play .rowup{animation:v-up var(--t) var(--d,0s) infinite both cubic-bezier(.5,0,.2,1)}
+  .v.play .led{animation:v-led 1.6s var(--d,0s) infinite both}
+  .v.play .blink{animation:v-led 1s infinite steps(1)}
+  .v.play .pulse{animation:v-pulse 2s var(--d,0s) infinite both}
+  .v.play .tick{animation:v-tick var(--t) var(--d,0s) infinite both}
+}
+@keyframes v-pop{0%{opacity:0;transform:scale(.85)}8%,86%{opacity:1;transform:none}94%,100%{opacity:0;transform:none}}
+@keyframes v-grow{0%{opacity:0;transform:scale(0)}10%,86%{opacity:1;transform:none}94%,100%{opacity:0}}
+@keyframes v-draw{0%{stroke-dashoffset:1;opacity:1}14%,86%{stroke-dashoffset:0;opacity:1}94%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes v-ring{0%{stroke-dashoffset:1}20%,86%{stroke-dashoffset:0;opacity:1}94%,100%{opacity:0}}
+@keyframes v-type{0%{transform:scaleX(0)}8%,86%{transform:none;opacity:1}94%,100%{opacity:0}}
+@keyframes v-snap{0%{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:.35}14%,86%{transform:none;opacity:1}94%,100%{opacity:0}}
+@keyframes v-fade{0%{opacity:0}10%,86%{opacity:1}94%,100%{opacity:0}}
+@keyframes v-trav{0%{offset-distance:0%;opacity:0}3%{opacity:1}18%{offset-distance:100%;opacity:1}24%,100%{offset-distance:100%;opacity:0}}
+@keyframes v-bump{0%{opacity:0;transform:scale(.4)}5%{opacity:1;transform:scale(1.25)}10%,86%{opacity:1;transform:none}94%,100%{opacity:0}}
+@keyframes v-wipe{0%{transform:scaleX(1)}28%,100%{transform:scaleX(0)}}
+@keyframes v-down{0%,6%{transform:none}16%,88%{transform:translateY(56px)}98%,100%{transform:none}}
+@keyframes v-up{0%,6%{transform:none}16%,88%{transform:translateY(-96px)}98%,100%{transform:none}}
+@keyframes v-led{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes v-pulse{0%{opacity:.6;transform:scale(1)}70%,100%{opacity:0;transform:scale(3.2)}}
+@keyframes v-tick{0%{opacity:.15}6%,86%{opacity:1}94%,100%{opacity:.15}}
+
+/* Service hero with visual */
+.svc-hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px clamp(32px,5vw,80px);align-items:end}
+.svc-hero h1{font-size:clamp(2.6rem,5.4vw,5.4rem);max-width:12ch}
+.svc-hero .v{width:100%}
+@media (max-width:900px){.svc-hero .wrap{grid-template-columns:1fr}}
+
+/* Cursor-follow preview on the services stack (desktop only) */
+.stack{overflow:visible}
+.stack li{position:relative}
+.stack li:last-child a{border-radius:0 0 28px 28px}
+.stack .peek{display:none}
+@media (hover:hover) and (pointer:fine){
+  .stack .peek{display:block;position:absolute;left:var(--mx,60%);top:var(--my,50%);width:280px;z-index:5;pointer-events:none;opacity:0;transform:translate(-50%,-115%) scale(.92) rotate(-2deg);transition:opacity .25s,transform .35s cubic-bezier(.2,.8,.2,1);box-shadow:0 30px 60px -20px rgba(20,21,26,.45)}
+  .stack li:hover .peek{opacity:1;transform:translate(-50%,-115%) scale(1) rotate(0)}
+}
