@@ -1,11 +1,13 @@
 # Ilan Olivares — Web Design & Development, El Paso, Texas
 
-> Ilan Olivares is an independent web designer and developer based in El Paso, Texas. He designs and hand-codes custom websites, website redesigns and landing pages, and provides local SEO, AI search visibility and website care for small businesses, churches, nonprofits, government and public agencies, medical practices, real estate, publications and personal brands. 10+ years of experience, 50+ projects launched. Clients work directly with Ilan from consultation through launch and support.
+> Ilan Olivares is an independent, bilingual (English and Spanish) web designer and developer based in El Paso, Texas. He designs and hand-codes custom websites, website redesigns and landing pages, and provides local SEO, AI search visibility and website care for small businesses, churches, nonprofits, government and public agencies, medical practices, real estate, publications and personal brands. 10+ years of experience, 50+ projects launched. Clients work directly with Ilan from consultation through launch and support.
 
 - Location: El Paso, Texas, USA
+- Languages: English and Spanish (full Spanish site at https://ilanolivares.com/es/)
 - Service area: El Paso, Horizon City, Socorro, Canutillo and Anthony, TX; Las Cruces, Sunland Park and Santa Teresa, NM; remote clients nationwide
 - Contact: hello@ilanolivares.com or https://ilanolivares.com/contact/
-- Free consultation; written proposal with scope and price before work begins
+- Free first consultation; written proposal with scope and price before work begins
+- Typical timelines: landing pages in a few weeks; full websites in one to three months
 
 ## Services
 - [Custom website design](https://ilanolivares.com/services/custom-web-design/): Designed around your customers, coded by hand, fast on every phone. A site that looks like the real deal because it is.
@@ -14,7 +16,11 @@
 - [Landing pages](https://ilanolivares.com/services/landing-pages/): One page, one goal. For launches, events, programs and ads. I can also build from your Figma or Webflow design.
 - [Website care & support](https://ilanolivares.com/services/website-care/): Updates, new pages, alerts and fixes, handled fast by the person who built it.
 
+## Guides
+- [How much does a website cost in El Paso?](https://ilanolivares.com/guides/website-cost-el-paso/): What drives website pricing and how to compare quotes
+- [¿Cuánto cuesta un sitio web en El Paso?](https://ilanolivares.com/es/guias/costo-sitio-web-el-paso/): Spanish version
+
 ## About
 - [About Ilan Olivares](https://ilanolivares.com/about/): Background and approach
-- [FAQ](https://ilanolivares.com/#faq): Cost, timelines, SEO, AI search, redesigns and support
-- [Start a project](https://ilanolivares.com/contact/): Project inquiry form
+- [FAQ](https://ilanolivares.com/#faq): Cost, timelines, bilingual sites, SEO, AI search, redesigns and support
+- [Start a project](https://ilanolivares.com/contact/): Project inquiry form (Spanish: https://ilanolivares.com/es/contacto/)

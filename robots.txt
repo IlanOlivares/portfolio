@@ -2,6 +2,7 @@
 User-agent: *
 Allow: /
 Disallow: /thanks/
+Disallow: /es/gracias/
 
 User-agent: GPTBot
 Allow: /
