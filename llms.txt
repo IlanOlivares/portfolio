@@ -1,26 +1,26 @@
-# Ilan Olivares — Web Design & Development, El Paso, Texas
+# Ilan Olivares — Full-Service Digital Studio
 
-> Ilan Olivares is an independent, bilingual (English and Spanish) web designer and developer based in El Paso, Texas. He designs and hand-codes custom websites, website redesigns and landing pages, and provides local SEO, AI search visibility and website care for small businesses, churches, nonprofits, government and public agencies, medical practices, real estate, publications and personal brands. 10+ years of experience, 50+ projects launched. Clients work directly with Ilan from consultation through launch and support.
+> Ilan Olivares is a founder-led, full-service digital studio based in El Paso, Texas, working with clients across the United States and internationally. The studio handles strategy and UX, brand identity, web design, web development, e-commerce, SEO and AI search visibility, managed hosting, domains, DNS, business email (Google Workspace and Microsoft 365), and ongoing website care and growth. Bilingual: English and Spanish. 10+ years of experience, 50+ websites, platforms and campaigns launched. Every engagement is led personally by founder Ilan Olivares.
 
-- Location: El Paso, Texas, USA
-- Languages: English and Spanish (full Spanish site at https://ilanolivares.com/es/)
-- Service area: El Paso, Horizon City, Socorro, Canutillo and Anthony, TX; Las Cruces, Sunland Park and Santa Teresa, NM; remote clients nationwide
+- Headquarters: El Paso, Texas, USA (serves El Paso, Las Cruces, the wider Southwest, nationwide and international clients)
+- Languages: English, Spanish (https://ilanolivares.com/es/)
 - Contact: hello@ilanolivares.com or https://ilanolivares.com/contact/
-- Free first consultation; written proposal with scope and price before work begins
+- Engagements: projects, monthly partnerships, managed services (hosting, domains, email, care)
+- Free discovery call; written proposal with scope, timeline and price before work begins
 - Typical timelines: landing pages in a few weeks; full websites in one to three months
 
 ## Services
-- [Custom website design](https://ilanolivares.com/services/custom-web-design/): Designed around your customers, coded by hand, fast on every phone. A site that looks like the real deal because it is.
-- [Local SEO & AI search visibility](https://ilanolivares.com/services/seo/): Show up when El Paso searches on Google, Maps and Bing, or asks ChatGPT. Built into every site, and available on its own.
-- [Website redesign](https://ilanolivares.com/services/website-redesign/): A dated or confusing site, rebuilt to look current and bring in inquiries without losing the rankings you've earned.
-- [Landing pages](https://ilanolivares.com/services/landing-pages/): One page, one goal. For launches, events, programs and ads. I can also build from your Figma or Webflow design.
-- [Website care & support](https://ilanolivares.com/services/website-care/): Updates, new pages, alerts and fixes, handled fast by the person who built it.
+- [Strategy & UX](https://ilanolivares.com/services/strategy/): Research, positioning, site architecture and user journeys, so every page has a job to do.
+- [Brand identity](https://ilanolivares.com/services/branding/): Logos, visual systems and guidelines that make you recognizable everywhere you show up.
+- [Web design](https://ilanolivares.com/services/web-design/): Bespoke, editorial-quality interfaces designed around your customers, never a template.
+- [Web development](https://ilanolivares.com/services/web-development/): Fast, accessible, hand-built sites on modern stacks, from static to Webflow to headless CMS.
+- [E-commerce](https://ilanolivares.com/services/ecommerce/): Online stores that sell, with checkout, payments, shipping and inventory handled properly.
+- [SEO & AI search](https://ilanolivares.com/services/seo/): Technical SEO, structured data and content that get you found on Google, Maps and in AI answers.
+- [Hosting, domains & email](https://ilanolivares.com/services/hosting-email/): Managed hosting, DNS, SSL and professional business email, set up properly and looked after.
+- [Care & growth](https://ilanolivares.com/services/care/): Updates, monitoring, analytics and continuous improvement, long after launch day.
 
-## Guides
-- [How much does a website cost in El Paso?](https://ilanolivares.com/guides/website-cost-el-paso/): What drives website pricing and how to compare quotes
-- [¿Cuánto cuesta un sitio web en El Paso?](https://ilanolivares.com/es/guias/costo-sitio-web-el-paso/): Spanish version
-
-## About
-- [About Ilan Olivares](https://ilanolivares.com/about/): Background and approach
-- [FAQ](https://ilanolivares.com/#faq): Cost, timelines, bilingual sites, SEO, AI search, redesigns and support
-- [Start a project](https://ilanolivares.com/contact/): Project inquiry form (Spanish: https://ilanolivares.com/es/contacto/)
+## Studio
+- [About the studio](https://ilanolivares.com/studio/)
+- [Selected work](https://ilanolivares.com/#work)
+- [Website cost guide](https://ilanolivares.com/insights/website-cost/)
+- [FAQ](https://ilanolivares.com/#faq)
