@@ -414,12 +414,44 @@ section{padding:clamp(80px,11vw,160px) 0}
 .svc-hero .v{width:100%}
 @media (max-width:900px){.svc-hero .wrap{grid-template-columns:1fr}}
 
-/* Cursor-follow preview on the services stack (desktop only) */
+/* Services stack: quiet hover */
 .stack{overflow:visible}
-.stack li{position:relative}
 .stack li:last-child a{border-radius:0 0 28px 28px}
-.stack .peek{display:none}
-@media (hover:hover) and (pointer:fine){
-  .stack .peek{display:block;position:absolute;left:var(--mx,60%);top:var(--my,50%);width:280px;z-index:5;pointer-events:none;opacity:0;transform:translate(-50%,-115%) scale(.92) rotate(-2deg);transition:opacity .25s,transform .35s cubic-bezier(.2,.8,.2,1);box-shadow:0 30px 60px -20px rgba(20,21,26,.45)}
-  .stack li:hover .peek{opacity:1;transform:translate(-50%,-115%) scale(1) rotate(0)}
-}
+
+/* ===== Home hero stage: all services in one sequence ===== */
+.stage{position:relative;border-radius:28px;background:var(--sbg);color:var(--sfg);transition:background-color .9s ease,color .9s ease;box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
+.stage-screen{position:relative;aspect-ratio:400/260}
+.stage .scene{position:absolute;inset:0;background:transparent;border-radius:0;box-shadow:none;opacity:0;transition:opacity .6s ease}
+.stage .scene.on{opacity:1}
+.stage-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 22px 20px}
+.stage-cap{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:inherit;min-width:0}
+.stage-num{font:200 1.6rem/1 var(--serif);letter-spacing:-1px;opacity:.8}
+.stage-name{font:500 1.02rem/1.2 var(--sans);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stage-cap:hover .stage-name{text-decoration:underline;text-underline-offset:.2em}
+.stage-ctrl{display:flex;align-items:center;gap:10px;flex:none}
+.segs{display:flex;gap:4px}
+.seg{width:18px;height:28px;padding:0;border:0;background:none;color:inherit;cursor:pointer;display:grid;place-items:center}
+.seg i{display:block;width:100%;height:3px;border-radius:2px;background:currentColor;opacity:.25;position:relative;overflow:hidden}
+.seg.done i{opacity:.7}
+.seg.on i{opacity:.25}
+.seg.on i::after{content:"";position:absolute;inset:0;background:currentColor;transform-origin:left;transform:scaleX(1)}
+.stage.running .seg.on i::after{animation:seg var(--dur,5.6s) linear forwards}
+.stage.paused .seg.on i::after{animation-play-state:paused}
+@keyframes seg{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.stage-pause{width:32px;height:32px;border-radius:50%;border:1px solid currentColor;background:none;color:inherit;opacity:.7;cursor:pointer;display:grid;place-items:center;padding:0}
+.stage-pause:hover{opacity:1}
+.stage-pause svg{width:12px;height:12px;fill:currentColor}
+.stage-pause .ipl{display:none}
+.stage.paused .stage-pause .ip{display:none}
+.stage.paused .stage-pause .ipl{display:block}
+@media (prefers-reduced-motion:reduce){.stage,.stage .scene{transition:none}.stage-pause{display:none}}
+
+/* Hero layout with stage */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px clamp(32px,5vw,80px);align-items:center}
+.hero-grid h1{font-size:clamp(3rem,6.2vw,6.4rem);max-width:none}
+.hero-grid .lede{margin-top:32px}
+.facts-row{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(56px,7vw,96px)}
+.facts-row li:nth-child(odd){padding-right:0}
+.facts-row li{padding-right:20px}
+@media (max-width:1000px){.hero-grid{grid-template-columns:1fr}.hero-grid h1{font-size:clamp(3rem,10vw,6rem)}}
+@media (max-width:700px){.facts-row{grid-template-columns:repeat(2,minmax(0,1fr))}.facts-row strong{font-size:1.7rem}.stage-bar{flex-wrap:wrap;padding:0 16px 14px;row-gap:6px}.stage-ctrl{width:100%;justify-content:space-between}.segs{flex:1;gap:3px}.seg{flex:1;width:auto}.stage-name{white-space:normal}}

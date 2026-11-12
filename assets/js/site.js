@@ -2,19 +2,40 @@
   var t=document.querySelector('.nav-toggle'),l=document.getElementById('nav-links');
   if(t&&l){t.addEventListener('click',function(){var o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});}
   var y=document.querySelector('[data-year]');if(y)y.textContent=new Date().getFullYear();
-  // Play service visuals only while visible
-  var vs=document.querySelectorAll('.v:not(.peek)');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Service-page visuals: play only while visible
+  var vs=document.querySelectorAll('.v:not(.scene)');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('play',e.isIntersecting);});},{threshold:.25});
     vs.forEach(function(v){io.observe(v);});
   } else { vs.forEach(function(v){v.classList.add('play');}); }
-  // Cursor-follow previews on the services stack
-  if(window.matchMedia&&matchMedia('(hover:hover) and (pointer:fine)').matches){
-    document.querySelectorAll('.stack li').forEach(function(li){
-      var pk=li.querySelector('.peek'); if(!pk) return;
-      li.addEventListener('mouseenter',function(){pk.classList.add('play');});
-      li.addEventListener('mouseleave',function(){pk.classList.remove('play');});
-      li.addEventListener('mousemove',function(e){var r=li.getBoundingClientRect();li.style.setProperty('--mx',(e.clientX-r.left)+'px');li.style.setProperty('--my',(e.clientY-r.top)+'px');});
-    });
+
+  // Home hero stage: every service in one sequence
+  var st=document.querySelector('.stage'); if(!st) return;
+  var scenes=st.querySelectorAll('.scene'), segs=st.querySelectorAll('.seg'), cap=st.querySelector('.stage-cap'),
+      num=st.querySelector('.stage-num'), name=st.querySelector('.stage-name'), pb=st.querySelector('.stage-pause');
+  var DUR=5600, i=0, timer=null, visible=false, userPaused=reduce, hovering=false;
+  function show(n){
+    i=(n+scenes.length)%scenes.length;
+    scenes.forEach(function(s,k){s.classList.toggle('on',k===i);s.classList.remove('play');});
+    segs.forEach(function(s,k){s.classList.toggle('on',k===i);s.classList.toggle('done',k<i);});
+    var sg=segs[i]; st.style.setProperty('--sbg',sg.dataset.bg); st.style.setProperty('--sfg',sg.dataset.fg);
+    num.textContent=('0'+(i+1)).slice(-2); name.textContent=sg.dataset.name; cap.href=sg.dataset.url;
+    void st.offsetWidth;
+    if(!reduce) scenes[i].classList.add('play');
+    schedule();
   }
+  function running(){return visible&&!userPaused&&!hovering&&!reduce;}
+  function schedule(){
+    clearTimeout(timer);
+    st.classList.toggle('running',running()); st.classList.toggle('paused',!running());
+    if(running()) timer=setTimeout(function(){show(i+1);},DUR);
+  }
+  segs.forEach(function(s,k){s.addEventListener('click',function(){show(k);});});
+  if(pb) pb.addEventListener('click',function(){userPaused=!userPaused;pb.setAttribute('aria-pressed',userPaused);pb.setAttribute('aria-label',userPaused?st.dataset.play:st.dataset.pause);
+    if(!userPaused) show(i); else schedule();});
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){visible=es[0].isIntersecting; if(visible) show(i); else schedule();},{threshold:.3}).observe(st);
+  } else { visible=true; show(0); }
 })();
