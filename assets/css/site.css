@@ -294,10 +294,7 @@ section{padding:clamp(80px,11vw,160px) 0}
 .tags li,.small{letter-spacing:0}
 .faq summary{font-weight:500}
 
-/* Tracking tuned for Neue Haas Grotesk Display (tighter by design than the fallback) */
-.display,h1,.cta h2{letter-spacing:-.022em}
-h2{letter-spacing:-.018em}
-.statement{letter-spacing:-.012em}
-.stack h3,.case h3,.plan h3,.phases h3,.related b,.facts strong{letter-spacing:-.012em}
-.foot-mark{letter-spacing:-.03em}
-.brand b,.score b,.cta .mail{letter-spacing:-.01em}
+/* Editorial tracking for Neue Haas Grotesk Display */
+.display,h1,h2,.cta h2,.foot-mark{letter-spacing:-2px}
+.statement,.stack h3,.case h3,.plan h3,.phases h3,.related b,.facts strong,.brand b,.score b,.cta .mail,.contact-aside h2{letter-spacing:-1px}
+@media (max-width:640px){.display,h1,h2,.cta h2{letter-spacing:-1px}}
