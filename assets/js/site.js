@@ -23,7 +23,7 @@
   function put(el,t,sc,flat){var x=t[0],y=t[1],w=t[2],h=t[3],s=el.style;
     if(flat){x+=w/2;y+=h/2;w=0;h=0;}
     s.left=x/4+'%';s.top=y/2.6+'%';s.width=w/4+'%';s.height=h/2.6+'%';
-    s.borderRadius='calc('+t[4]+'*100cqw/400)';s.backgroundColor=col(t[5],sc);s.borderColor=t[6]?col(t[6],sc):'rgba(0,0,0,0)';
+    s.borderRadius='calc('+t[4]+'*100cqw/400)';s.backgroundColor=col(t[5],sc);s.borderColor=t[6]?col(t[6],sc):'rgba(0,0,0,0)';s.borderWidth=t[6]?'':'0px';
     s.opacity=flat?0:t[7];s.zIndex=t[8];}
   function firstOf(sc){for(var k=0;k<F.length;k++)if(F[k].sc===sc)return k;return 0;}
   function lastOf(sc){for(var k=BLANK-1;k>=0;k--)if(F[k].sc===sc)return k;return 0;}

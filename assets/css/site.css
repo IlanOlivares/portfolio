@@ -424,7 +424,7 @@ section{padding:clamp(80px,11vw,160px) 0}
 .stage-screen{position:relative;aspect-ratio:400/260;container-type:inline-size;margin:clamp(14px,2.6vw,40px) 0 clamp(8px,1.6vw,24px)}
 .stage .ac{position:absolute;display:block;box-sizing:border-box;opacity:0;border:calc(2*100cqw/400) solid transparent;
   transition:left 1.2s var(--mo),top 1.2s var(--mo),width 1.2s var(--mo),height 1.2s var(--mo),border-radius 1.2s var(--mo),
-  background-color 1.2s var(--mo),border-color 1.2s var(--mo),opacity 1s var(--mo);will-change:left,top,width,height}
+  background-color 1.2s var(--mo),border-color 1.2s var(--mo),border-width 1.2s var(--mo),opacity 1s var(--mo);will-change:left,top,width,height}
 .stage .ac.p1{animation:ping 2.4s ease-out infinite}
 .stage .ac.p2{animation:v-led 1s infinite steps(1)}
 @keyframes ping{0%{box-shadow:0 0 0 0 var(--c)}70%,100%{box-shadow:0 0 0 calc(12*100cqw/400) rgba(0,0,0,0)}}
