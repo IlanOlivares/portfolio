@@ -13,17 +13,15 @@
 
   // Home hero stage: every service in one sequence
   var st=document.querySelector('.stage'); if(!st) return;
-  var scenes=st.querySelectorAll('.scene'), segs=st.querySelectorAll('.seg'), cap=st.querySelector('.stage-cap'),
+  var segs=st.querySelectorAll('.seg'), cap=st.querySelector('.stage-cap'),
       num=st.querySelector('.stage-num'), name=st.querySelector('.stage-name'), pb=st.querySelector('.stage-pause');
-  var DUR=5600, i=0, timer=null, visible=false, userPaused=reduce, hovering=false;
+  var DUR=6000, i=0, timer=null, visible=false, userPaused=reduce, hovering=false;
   function show(n){
-    i=(n+scenes.length)%scenes.length;
-    scenes.forEach(function(s,k){s.classList.toggle('on',k===i);s.classList.remove('play');});
+    i=(n+segs.length)%segs.length;
+    st.setAttribute('data-s',i);
     segs.forEach(function(s,k){s.classList.toggle('on',k===i);s.classList.toggle('done',k<i);});
     var sg=segs[i]; st.style.setProperty('--sbg',sg.dataset.bg); st.style.setProperty('--sfg',sg.dataset.fg);
     num.textContent=('0'+(i+1)).slice(-2); name.textContent=sg.dataset.name; cap.href=sg.dataset.url;
-    void st.offsetWidth;
-    if(!reduce) scenes[i].classList.add('play');
     schedule();
   }
   function running(){return visible&&!userPaused&&!hovering&&!reduce;}
