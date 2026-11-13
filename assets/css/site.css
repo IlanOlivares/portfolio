@@ -420,11 +420,11 @@ section{padding:clamp(80px,11vw,160px) 0}
 
 /* ===== Home hero stage: all services in one sequence ===== */
 .stage{position:relative;border-radius:28px;background:var(--sbg);color:var(--sfg);transition:background-color 1.25s cubic-bezier(.65,0,.2,1),color 1.25s cubic-bezier(.65,0,.2,1);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
-.stage{--mo:cubic-bezier(.65,0,.2,1)}
-.stage-screen{position:relative;aspect-ratio:400/260;container-type:inline-size;overflow:hidden}
+.stage{--mo:cubic-bezier(.6,0,.15,1)}
+.stage-screen{position:relative;aspect-ratio:400/260;container-type:inline-size;margin:clamp(14px,2.6vw,40px) 0 clamp(8px,1.6vw,24px)}
 .stage .ac{position:absolute;display:block;box-sizing:border-box;opacity:0;border:calc(2*100cqw/400) solid transparent;
   transition:left 1.2s var(--mo),top 1.2s var(--mo),width 1.2s var(--mo),height 1.2s var(--mo),border-radius 1.2s var(--mo),
-  background-color 1.2s var(--mo),border-color 1.2s var(--mo),opacity .8s ease}
+  background-color 1.2s var(--mo),border-color 1.2s var(--mo),opacity 1s var(--mo);will-change:left,top,width,height}
 .stage .ac.p1{animation:ping 2.4s ease-out infinite}
 .stage .ac.p2{animation:v-led 1s infinite steps(1)}
 @keyframes ping{0%{box-shadow:0 0 0 0 var(--c)}70%,100%{box-shadow:0 0 0 calc(12*100cqw/400) rgba(0,0,0,0)}}
@@ -483,10 +483,12 @@ section{padding:clamp(80px,11vw,160px) 0}
 @keyframes s-tick{0%{opacity:.15}6%,100%{opacity:1}}
 /* Hero layout with stage */
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px clamp(32px,5vw,80px);align-items:center}
-.hero-grid h1{font-size:clamp(3rem,6.2vw,6.4rem);max-width:none}
+.hero-grid>:first-child{container-type:inline-size}
+.hero-grid h1{font-size:clamp(2.5rem,13.2cqi,7rem);max-width:none}
+.hero-grid h1>span{white-space:nowrap}
 .hero-grid .lede{margin-top:32px}
 .facts-row{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(56px,7vw,96px)}
 .facts-row li:nth-child(odd){padding-right:0}
 .facts-row li{padding-right:20px}
-@media (max-width:1000px){.hero-grid{grid-template-columns:1fr}.hero-grid h1{font-size:clamp(3rem,10vw,6rem)}}
+@media (max-width:1000px){.hero-grid{grid-template-columns:1fr}}
 @media (max-width:700px){.facts-row{grid-template-columns:repeat(2,minmax(0,1fr))}.facts-row strong{font-size:1.7rem}.stage-bar{flex-wrap:wrap;padding:0 16px 14px;row-gap:6px}.stage-ctrl{width:100%;justify-content:space-between}.segs{flex:1;gap:3px}.seg{flex:1;width:auto}.stage-name{white-space:normal}}
