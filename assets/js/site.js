@@ -96,7 +96,7 @@
     try{u=new URL(raw); if(u.hostname.indexOf('.')<1) throw 0;}catch(x){msg.textContent=c.bad;input.focus();return;}
     reset(); ck.classList.add('busy'); var s=0; msg.textContent=c.steps[0];
     tick=setInterval(function(){s=(s+1)%c.steps.length;msg.textContent=c.steps[s];},4500);
-    var q='https://www.googleapis.com/pagespeedonline/v5/runPagespeed?strategy=mobile&url='+encodeURIComponent(u.href)+keys.map(function(k){return '&category='+k;}).join('');
+    var q='https://www.googleapis.com/pagespeedonline/v5/runPagespeed?strategy=mobile'+(c.key?'&key='+c.key:'')+'&url='+encodeURIComponent(u.href)+keys.map(function(k){return '&category='+k;}).join('');
     fetch(q).then(function(r){if(!r.ok) throw 0; return r.json();}).then(function(d){
       var L=d.lighthouseResult, cat=L.categories, min=100;
       keys.forEach(function(k,i){var sc=Math.round((cat[k].score||0)*100); min=Math.min(min,sc);
