@@ -446,6 +446,34 @@ section{padding:clamp(80px,11vw,160px) 0}
 .stage.paused .stage-pause .ipl{display:block}
 @media (prefers-reduced-motion:reduce){.stage,.stage .scene{transition:none}.stage-pause{display:none}}
 
+/* Stage scenes play once and hold their final composition */
+@media (prefers-reduced-motion:no-preference){
+.stage .v.play .pop{animation-name:s-pop;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .grow{animation-name:s-grow;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .draw{animation-name:s-draw;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .ring{animation-name:s-ring;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .type{animation-name:s-type;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .line{animation-name:s-type;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .snap{animation-name:s-snap;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .fadein{animation-name:s-fade;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .areain{animation-name:s-fade;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .bump{animation-name:s-bump;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .rowdown{animation-name:s-down;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .rowup{animation-name:s-up;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .tick{animation-name:s-tick;animation-iteration-count:1;animation-fill-mode:both}
+.stage .v.play .trav,.stage .v.play .wipe{animation-iteration-count:1}
+}
+@keyframes s-pop{0%{opacity:0;transform:scale(.85)}8%,100%{opacity:1;transform:none}}
+@keyframes s-grow{0%{opacity:0;transform:scale(0)}10%,100%{opacity:1;transform:none}}
+@keyframes s-draw{0%{stroke-dashoffset:1;opacity:1}14%,100%{stroke-dashoffset:0;opacity:1}}
+@keyframes s-ring{0%{stroke-dashoffset:1}20%,100%{stroke-dashoffset:0;opacity:1}}
+@keyframes s-type{0%{transform:scaleX(0)}8%,100%{transform:none;opacity:1}}
+@keyframes s-snap{0%{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:.35}14%,100%{transform:none;opacity:1}}
+@keyframes s-fade{0%{opacity:0}10%,100%{opacity:1}}
+@keyframes s-bump{0%{opacity:0;transform:scale(.4)}5%{opacity:1;transform:scale(1.25)}10%,100%{opacity:1;transform:none}}
+@keyframes s-down{0%,6%{transform:none}16%,100%{transform:translateY(56px)}}
+@keyframes s-up{0%,6%{transform:none}16%,100%{transform:translateY(-96px)}}
+@keyframes s-tick{0%{opacity:.15}6%,100%{opacity:1}}
 
 /* ===== Home hero stage: one set of shapes that morph service to service ===== */
 .stage-screen{position:relative;aspect-ratio:400/260;container-type:inline-size;overflow:hidden}
