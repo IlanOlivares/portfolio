@@ -409,9 +409,10 @@ section{padding:clamp(80px,11vw,160px) 0}
 @keyframes v-tick{0%{opacity:.15}6%,86%{opacity:1}94%,100%{opacity:.15}}
 
 /* Service hero with visual */
-.svc-hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px clamp(32px,5vw,80px);align-items:end}
+.svc-hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px clamp(32px,5vw,80px);align-items:end}
 .svc-hero h1{font-size:clamp(2.6rem,5.4vw,5.4rem);max-width:12ch}
-.svc-hero .v{width:100%}
+.svc-hero .v{width:100%;border-radius:28px;padding-block:calc((clamp(14px,2.6vw,40px) + clamp(8px,1.6vw,24px) + 53px)/2)}
+@media (max-width:700px){.svc-hero .v{padding-block:calc((clamp(14px,2.6vw,40px) + clamp(8px,1.6vw,24px) + 78px)/2)}}
 @media (max-width:900px){.svc-hero .wrap{grid-template-columns:1fr}}
 
 /* Services stack: quiet hover */
