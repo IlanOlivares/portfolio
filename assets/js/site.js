@@ -13,12 +13,19 @@
 
   // Home hero stage: every service in one sequence
   var st=document.querySelector('.stage'); if(!st) return;
-  var segs=st.querySelectorAll('.seg'), cap=st.querySelector('.stage-cap'),
+  var scenes=st.querySelectorAll('.scene'), segs=st.querySelectorAll('.seg'), cap=st.querySelector('.stage-cap'),
       num=st.querySelector('.stage-num'), name=st.querySelector('.stage-name'), pb=st.querySelector('.stage-pause');
-  var DUR=6000, i=0, timer=null, visible=false, userPaused=reduce, hovering=false;
+  var DUR=8000, i=0, timer=null, rt1=null, rt2=null, visible=false, userPaused=reduce, hovering=false;
   function show(n){
     i=(n+segs.length)%segs.length;
     st.setAttribute('data-s',i);
+    clearTimeout(rt1); clearTimeout(rt2); st.classList.remove('rich');
+    scenes.forEach(function(s,k){s.classList.toggle('on',k===i);s.classList.remove('play');});
+    if(reduce){st.classList.add('rich');}
+    else{
+      rt1=setTimeout(function(){void scenes[i].offsetWidth;scenes[i].classList.add('play');st.classList.add('rich');},1400);
+      rt2=setTimeout(function(){st.classList.remove('rich');},1400+6000);
+    }
     segs.forEach(function(s,k){s.classList.toggle('on',k===i);s.classList.toggle('done',k<i);});
     var sg=segs[i]; st.style.setProperty('--sbg',sg.dataset.bg); st.style.setProperty('--sfg',sg.dataset.fg);
     num.textContent=('0'+(i+1)).slice(-2); name.textContent=sg.dataset.name; cap.href=sg.dataset.url;
